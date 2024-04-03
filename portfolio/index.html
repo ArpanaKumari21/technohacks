@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2>portfolio.</h2>
+                <ul id="sidemenu"> 
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+            </ul><i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>3rd year IT student</p>
+                <h1>hi,I am <br><span id="name">Arpana Kumari</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------------about------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1"><img src="images/WhatsApp Image 2024-03-23 at 9.10.44 PM (1).png"></div>
+                <div class="about-col2"><h1 class="subtitle">About Me</h1>
+                <p>3rd year IT student with strong academic record and outstanding communication and coding skills,seeking for an internship to gain experience and enhance my skills.</p>
+            <div class="tab-title">
+            <div class="tab-links active" onclick="opentab('skills')">Skill</div>
+            <div class="tab-links" onclick="opentab('Experience')">Experience</div>
+            <div class="tab-links" onclick="opentab('Education')">Education</div>
+            </div>
+        <div class="tab-content active-tab" id="skills">
+            <ul>
+            <li><span>Web development</span><br>web development</li>
+            <li><span>laguages</span><br>JAVA,C,Javascript</li>
+            </ul>
+        </div>
+        <div class="tab-content" id="Experience">
+            <ul>
+            <li><span>Internship</span><br>AICT durgapur<br>Bharat Intern</li>
+            </ul>
+        </div>
+        <div class="tab-content" id="Education">
+            <ul>
+            <li><span>B.tech</span><br>Bengal college of engineering and technology,Durgapur</li>
+            <li><span>XII</span><br>DAV Model,digwadih,dhanbad<br>CBSE board (83.4%)</li>
+            <li><span>X</span><br>De nobili school fri,dhanbad<br>ICSE board (86%)</li>
+            </ul>
+        </div></div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------portfolio-------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work"><img src="images/amazon.png">
+                <div class="layer"><h3>amazon clone</h3>
+                <p>amazon is a multivendor eCommerce marketplace via which the vendor and users can communicate and sell/buy product.
+                    I have used HTML and CSS for making this clone.
+                </p><a href="https://6603d5f5f481dc7089e71be7--leafy-kringle-77b6e6.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div>
+                <div class="work"><img src="images/work-2.png">
+                    <div class="layer"><h3>spotify clone</h3>
+                    <p>spotify is a digital music service that gives you access to millions of songs .
+                    I have used HTML and CSS for making this clone.
+                    </p><a href="https://6603c91f7427336eaa0e008f--delightful-kringle-633a18.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div>
+                <div class="work"><img src="https://images.unsplash.com/photo-1627556704302-624286467c65?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="450px"><div class="layer"><h3>College admission System</h3>
+                    <p>A website in which someone can view about the college, see the fee structure, and can take admission in the college
+                    </p><a href="https://6603cdcd25604b6a87ca05bf--melodic-taffy-c7a1e0.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div>
+            </div>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <!------------------------contact--------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>arpana.kumari217@gmain.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>1234567890</p>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/profile.php?id=100048995957937&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/arpana._pandey?igsh=Y2R1aTU1OWZsMGIx"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/arpana-kumari-2b3759270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/ArpanaKumari21"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="your name" required>
+                        <input type="email" name="Email" placeholder="your email" required>
+                        <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/b9a19ee5ef.js" crossorigin="anonymous"></script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontent = document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active");
+            }
+            for(tabcont of tabcontent){
+                tabcont.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby3TbkhiXAD1wfbNmgMJ5TjiwSDbxE8YKgtzy7CrF1KfpdznIqn4w_ISi4WNhL6G4pFSg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById('msg');
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
